@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unittest Results</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Unittest Results</h2>
+                <p class='attribute'><strong>Start Time: </strong>2023-12-06 15:10:21</p>
+                <p class='attribute'><strong>Duration: </strong>45.11 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 6, Pass: 5, Error: 1</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>__main__.TestUserCRUD</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_cargar_user</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_create_user</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_create_user_fail</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="errorMessage"]"}
+  (Session info: chrome=119.0.6045.202); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7433082B2+55298]
+	(No symbol) [0x00007FF743275E02]
+	(No symbol) [0x00007FF7431305AB]
+	(No symbol) [0x00007FF74317175C]
+	(No symbol) [0x00007FF7431718DC]
+	(No symbol) [0x00007FF7431ACBC7]
+	(No symbol) [0x00007FF7431920EF]
+	(No symbol) [0x00007FF7431AAAA4]
+	(No symbol) [0x00007FF743191E83]
+	(No symbol) [0x00007FF74316670A]
+	(No symbol) [0x00007FF743167964]
+	GetHandleVerifier [0x00007FF743680AAB+3694587]
+	GetHandleVerifier [0x00007FF7436D728E+4048862]
+	GetHandleVerifier [0x00007FF7436CF173+4015811]
+	GetHandleVerifier [0x00007FF7433A47D6+695590]
+	(No symbol) [0x00007FF743280CE8]
+	(No symbol) [0x00007FF74327CF34]
+	(No symbol) [0x00007FF74327D062]
+	(No symbol) [0x00007FF74326D3A3]
+	BaseThreadInitThunk [0x00007FF8556C257D+29]
+	RtlUserThreadStart [0x00007FF85726AA58+40]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\IngCa\Downloads\Prueba\Python\pruebas.py", line 106, in test_create_user_fail
+    error_message = self.driver.find_element(By.XPATH, '//*[@id="errorMessage"]')
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 741, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="errorMessage"]"}
+  (Session info: chrome=119.0.6045.202); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7433082B2+55298]
+	(No symbol) [0x00007FF743275E02]
+	(No symbol) [0x00007FF7431305AB]
+	(No symbol) [0x00007FF74317175C]
+	(No symbol) [0x00007FF7431718DC]
+	(No symbol) [0x00007FF7431ACBC7]
+	(No symbol) [0x00007FF7431920EF]
+	(No symbol) [0x00007FF7431AAAA4]
+	(No symbol) [0x00007FF743191E83]
+	(No symbol) [0x00007FF74316670A]
+	(No symbol) [0x00007FF743167964]
+	GetHandleVerifier [0x00007FF743680AAB+3694587]
+	GetHandleVerifier [0x00007FF7436D728E+4048862]
+	GetHandleVerifier [0x00007FF7436CF173+4015811]
+	GetHandleVerifier [0x00007FF7433A47D6+695590]
+	(No symbol) [0x00007FF743280CE8]
+	(No symbol) [0x00007FF74327CF34]
+	(No symbol) [0x00007FF74327D062]
+	(No symbol) [0x00007FF74326D3A3]
+	BaseThreadInitThunk [0x00007FF8556C257D+29]
+	RtlUserThreadStart [0x00007FF85726AA58+40]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_edad_verific_user</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_editar_user</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_eliminar_user</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 6, Pass: 5, Error: 1 -- Duration: 45.11 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html
